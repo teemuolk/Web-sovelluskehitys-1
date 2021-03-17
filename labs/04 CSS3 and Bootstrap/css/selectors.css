@@ -17,3 +17,11 @@ h1.alert {
 p#unique {
     font-size: 0.8em;
 }
+
+p.line {
+    text-decoration: underline;
+}
+
+#basic {
+    color: black;
+}
