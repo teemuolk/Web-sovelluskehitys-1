@@ -6,25 +6,26 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Demonstrating HTML forms</title>
+		<link href="css/form.css" type="text/css" rel="stylesheet">
 	</head>
 	
 	<body>
 		<h1>Turnitin</h1>
 		<form  lang="fi" action="">
 			<div>
-				Name: <input type="text" name="studentname"/>
+				Name: <input type="text" name="studentname" placeholder="First name, Last name"/>
 			</div>
 			<div>
-				Student id: <input type="text" name="id"  />
+				Student id: <input type="text" name="id" placeholder="123456" />
 			</div>
 			<div>
-				Email:
+				Email: <input type="text" name="email" placeholder="pertti.keinonen@metropolia.fi"/>
 				<!--
 				Make an input named "email"
 				-->
 			</div>
 			<div>
-				Assignment:
+				Assignment: <input type="text" name="assingment" placeholder="Your assingment"/>
 				<!--
 				Make an input named "assignment"
 				-->
@@ -32,26 +33,38 @@
 			</div>
 
 			<div>
-				Code:
+				Code: <input type="text" name="code" placeholder="Your code"/>
 				<!--
 				Make an input named "code" which is a text area to put student's code into.
 				-->
 				
 			</div>
 			<div>
-				Cheat:
+				Cheat: <input type="checkbox" name="cheat" value="check"> Must be checked. <br>
 			<!--
 				Make an input named "cheat" which is a check box the student must check.
 			-->
 			</div>
 			<div>
-				Pay:
+				<fieldset>
+					<legend>Pay</legend>
+					<label><input type="radio" name="pay" value="visa" checked> Visa </label><br>
+					<label><input type="radio" name="pay" value="paypal"> PayPal </label><br>
+					<label><input type="radio" name="pay" value="mastercard"> Mastercard </label><br>
+				</fieldset>
+
 			<!--
 				Make an input named "payment" which is a radio box with possible values of visa, paypal, mastercard
 			-->
 			</div>
 			<div>
-				Score:
+				Score: <select name="score">
+				<option value="one">1</option>
+				<option value="two">2</option>
+				<option value="three">3</option>
+				<option value="four">4</option>
+				<option value="five">5</option>
+			</select>
 			<!--
 				Make an input named "score" which is a list of choices for the score 
 			-->
